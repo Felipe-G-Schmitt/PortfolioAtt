@@ -7,6 +7,39 @@ header {
   background-color: #121212;
 }
 
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #121212;
+  color: #fff;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-icons a {
+  color: #fff;
+  text-decoration: none;
+  border: 2px white solid;
+  height: 18px;
+  padding: 10px;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: ease-in-out 0.3s;
+}
+
+.footer-icons a:hover {
+  transform: scale(1.2);
+  transition: ease-in-out 0.3s;
+  box-shadow: #fff 0px 0px 5px;
+}
+
 body {
   margin: 0;
   font-family: 'Jost', sans-serif;
@@ -22,6 +55,19 @@ body {
   gap: 50px;
 }
 
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
 .logo {
   width: 50px;
   height: auto;
@@ -33,10 +79,12 @@ body {
 }
 
 .About {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  height: 32vh;
+  margin-top: 20px;
 }
 
 .image-wrapper {
@@ -56,8 +104,81 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  width: 40%; /* controle do tamanho do gradiente */
+  width: 40%; 
   height: 100%;
   background: linear-gradient(to left, #121212, transparent);
 }
 
+.infos {
+  margin-left: 25px;
+  height: 100%;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.infos h1 {
+  text-transform: uppercase;
+  font-size: 2.3vw;
+  margin-block-start: -0.9vw;
+  margin-block-end: 0px;
+}
+
+.infos p{
+  margin-block-start: 2px;
+  margin-block-end: 0px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+  margin-top: 35px;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.social-item p {
+  margin: 0;
+  margin-block-start: 0px;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+  margin-top: auto;
+}
+
+.icons a {
+  color: #fff;
+  text-decoration: none;
+  border: 2px white solid;
+  height: 18px;
+  padding: 10px;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: ease-in-out 0.3s;
+}
+
+.icons a:hover {
+  transform: scale(1.2);
+  transition: ease-in-out 0.3s;
+  box-shadow: #fff 0px 0px 5px;
+}
+
+.langTolls {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.langTolls h1{
+  text-transform: uppercase;
+  font-size: 2.3vw;
+}
