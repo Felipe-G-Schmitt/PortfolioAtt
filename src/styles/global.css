@@ -201,6 +201,124 @@ body {
   animation: scroll 20s linear infinite;
 }
 
+.Sec-projects {
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.Sec-projects h1{
+  text-transform: uppercase;
+  font-size: 2.3vw;
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  display: flex;
+  width: 380px;
+  height: 400px;
+  background-size: cover;
+  overflow: hidden;
+  padding: 5px;
+  color: white;
+  text-align: center;
+  border: 2px solid #fff;
+  box-shadow: #fff 0px 0px 10px;
+  transition: width 0.5s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  width: 750px; 
+  box-shadow: #fff 0px 0px 25px;
+}
+
+.project-card img {
+  width: 370px;
+  height: auto;
+}
+
+.project-info {
+  margin-left: 20px;
+  width: 350px;  
+  display: flex;
+  padding-right: 15px;
+  flex-direction: column;
+  text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.project-info h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.project-info p {
+  font-size: 17px;
+}
+
+.project-langs {
+  margin-top: auto;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-langs a {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px white solid;
+  height: 42px;
+  padding: 10px;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: ease-in-out 0.3s;
+  position: relative;
+}
+
+.project-langs a::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.project-langs a::before {
+  content: "";
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.85) transparent transparent transparent;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-langs a:hover::after,
+.project-langs a:hover::before {
+  opacity: 1;
+}
+
 @media (max-width: 1350px) {
   @keyframes scroll {
   from {

@@ -1,4 +1,5 @@
 import profile from "../assets/profile.png";
+import imgproj1 from "../assets/projects/pinas-home.png";
 import { IoMdMail, IoIosPin } from "react-icons/io";
 import { FaPhoneAlt, FaGithub, FaLinkedin, FaInstagram, FaHtml5, FaCss3Alt, FaJsSquare, FaPhp, FaNodeJs, FaJava, FaReact, FaFigma, } from "react-icons/fa";
 import { SiMysql, SiCplusplus, SiXampp, SiAdobephotoshop } from "react-icons/si";
@@ -45,9 +46,10 @@ function Home() {
           </a>
         
           <a href="https://www.instagram.com/feeeepers/" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="iconInsta"/>
+            <FaInstagram className="iconInsta"/>
           </a>
         </section>
+        
       </div>
     </section>
     <section className="langTolls">
@@ -85,6 +87,28 @@ function Home() {
           <LiaGit size={28}/>
           <FaFigma size={28}/>
           <SiAdobephotoshop size={28}/>
+        </div>
+      </div>
+    </section>
+    <section className="Sec-projects">
+      <h1>Projetos</h1>
+
+      <div className="projects">
+        <div className="project-card">
+          <img src={imgproj1} alt="Project 1" />
+
+          <div className="project-info">
+            <h2>Pinas</h2>
+            <p>Desenvolvido por Felipe Gabriel, Lucas Coelho e Felipe Redivo, possuiamos o objetivo de criar um aplicativo em React Native onde o usuário poderia jogar um pequeno quiz, porém, para isso ele deveria criar uma conta e logar posteriormente</p>
+          
+            <div className="project-langs">
+              <a data-tooltip="React Native"><FaReact/></a>
+              <a data-tooltip="VS Code"><VscVscode/></a>
+              <a data-tooltip="Git"><LiaGit/></a>
+              <a data-tooltip="CSS3"><FaCss3Alt/></a>
+              <a data-tooltip="JavaScript"><FaJsSquare/></a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
