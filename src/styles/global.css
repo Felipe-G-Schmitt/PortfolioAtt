@@ -214,8 +214,10 @@ body {
 
 .projects {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   padding: 20px;
   flex-wrap: wrap;
 }
@@ -235,7 +237,7 @@ body {
 }
 
 .project-card:hover {
-  width: 750px; 
+  width: 800px; 
   box-shadow: #fff 0px 0px 25px;
 }
 
@@ -246,7 +248,7 @@ body {
 
 .project-info {
   margin-left: 20px;
-  width: 350px;  
+  width: auto;  
   display: flex;
   padding-right: 15px;
   flex-direction: column;
@@ -255,12 +257,17 @@ body {
   overflow-wrap: break-word;
 }
 
-.project-info h2 {
-  text-transform: uppercase;
-  font-size: 40px;
+.project-texts {
+  height: 320px;
+  overflow: hidden;
 }
 
-.project-info p {
+.project-info .project-texts h2 {
+  text-transform: uppercase;
+  font-size: 35px;
+}
+
+.project-info .project-texts p {
   font-size: 17px;
 }
 
