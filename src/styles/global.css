@@ -201,6 +201,17 @@ body {
   animation: scroll 20s linear infinite;
 }
 
+.MainSec-projects {
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.MainSec-projects h1{
+  text-transform: uppercase;
+  font-size: 2.3vw;
+  text-align: center;
+}
+
 .Sec-projects {
   margin-top: 50px;
   justify-content: center;
@@ -222,6 +233,25 @@ body {
   flex-wrap: wrap;
 }
 
+.year-separator {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+}
+
+.year-separator .line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #fff;
+}
+
+.year-separator span {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 .project-card {
   display: flex;
   width: 380px;
@@ -234,6 +264,7 @@ body {
   border: 2px solid #fff;
   box-shadow: #fff 0px 0px 10px;
   transition: width 0.5s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .project-card:hover {
@@ -269,6 +300,18 @@ body {
 
 .project-info .project-texts p {
   font-size: 17px;
+}
+
+.main-cat-proj {
+  display: flex;
+  gap: 10px;
+}
+
+.cat-proj {
+  width: fit-content;
+  padding: 0px 10px 0px 10px;
+  border-radius: 15px;
+  margin: 5px 0px 5px 0px;
 }
 
 .project-langs {
