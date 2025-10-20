@@ -1,17 +1,14 @@
 import About from "../components/About";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
+import MainProjects from "../components/MainProjects";
 
 function Home() {
   return (
     <>
     <About />
     <Skills />
-
-    <section className="MainSec-projects">
-      <h1>Projetos em destaque</h1>
-    </section>
-
+    <MainProjects />
     <Projects />
     </>
   );

@@ -30,6 +30,8 @@ function Projects() {
                 <div className="main-cat-proj">
                   <CategoriaProjeto categoria="Faculdade"/>
                   <CategoriaProjeto categoria="Web"/>
+                  <CategoriaProjeto categoria="Frontend"/>
+                  <CategoriaProjeto categoria="Backend"/>
                 </div>
               <p>StockSystem é a interface de usuário desenvolvida para interagir com a API StockSystem. O objetivo deste projeto é fornecer uma plataforma visualmente amigável e intuitiva para o gerenciamento de estoque, permitindo aos usuários realizar operações como cadastrar, visualizar, editar e excluir produtos de forma eficiente.</p>
             </div>
@@ -59,6 +61,8 @@ function Projects() {
                 <div className="main-cat-proj">
                   <CategoriaProjeto categoria="Ensino Médio"/>
                   <CategoriaProjeto categoria="Mobile"/>
+                  <CategoriaProjeto categoria="Frontend"/>
+                  <CategoriaProjeto categoria="Backend"/>
                 </div>
               <p>Desenvolvido por Felipe Gabriel, Lucas Coelho e Felipe Redivo, possuiamos o objetivo de criar um aplicativo em React Native onde o usuário poderia jogar um pequeno quiz, porém, para isso ele deveria criar uma conta e logar posteriormente</p>
             </div>
@@ -82,6 +86,8 @@ function Projects() {
                 <div className="main-cat-proj">
                   <CategoriaProjeto categoria="Ensino Médio"/>
                   <CategoriaProjeto categoria="Mobile"/>
+                  <CategoriaProjeto categoria="Frontend"/>
+                  <CategoriaProjeto categoria="Backend"/>
                 </div>
               <p>Desenvolvido por Felipe Gabriel e Lucas Coelho utilizando o framework React Native, programamos um aplicativo que possuia uma "home" apresentando os programadores, e uma página contendo uma seta indicando a direção que o dispositivo esteja apontado, além disso um mapa exibindo a localização do dispositivo</p>
             </div>
@@ -105,6 +111,8 @@ function Projects() {
                 <div className="main-cat-proj">
                   <CategoriaProjeto categoria="Ensino Médio"/>
                   <CategoriaProjeto categoria="Mobile"/>
+                  <CategoriaProjeto categoria="Frontend"/>
+                  <CategoriaProjeto categoria="Backend"/>
                 </div>
               <p>Desenvolvido por Felipe Gabriel e Lucas Coelho, o aplicativo tem como temática uma fruta e foi criado usando React Native. Inclui um tema de cores padrão, ícones interativos personalizados, barra de navegação inferior, listagem de tarefas e um formulário simples com campos de texto.</p>
             </div>

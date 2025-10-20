@@ -10,37 +10,37 @@ function Skills() {
     <h1>Linguagens e ferramentas</h1>
         <div className="skills">
             <div className="skills-track">
-              <FaHtml5 size={28}/>
-              <FaCss3Alt size={28}/>
-              <FaJsSquare size={28}/>
-              <FaPhp size={28}/>
-              <SiMysql size={28}/>
-              <FaNodeJs size={28}/>
-              <FaJava size={28}/>
-              <SiCplusplus size={28}/>
-              <FaReact size={28}/>
-              <FaReact size={28}/>
-              <VscVscode size={28}/>
-              <SiXampp size={28}/>
-              <LiaGit size={28}/>
-              <FaFigma size={28}/>
-              <SiAdobephotoshop size={28}/>
-    
-              <FaHtml5 size={28}/>
-              <FaCss3Alt size={28}/>
-              <FaJsSquare size={28}/>
-              <FaPhp size={28}/>
-              <SiMysql size={28}/>
-              <FaNodeJs size={28}/>
-              <FaJava size={28}/>
-              <SiCplusplus size={28}/>
-              <FaReact size={28}/>
-              <FaReact size={28}/>
-              <VscVscode size={28}/>
-              <SiXampp size={28}/>
-              <LiaGit size={28}/>
-              <FaFigma size={28}/>
-              <SiAdobephotoshop size={28}/>
+              <a data-tooltip="HTML5"><FaHtml5 size={28}/></a>
+              <a data-tooltip="CSS3"><FaCss3Alt size={28}/></a>
+              <a data-tooltip="JavaScript"><FaJsSquare size={28}/></a>
+              <a data-tooltip="PHP"><FaPhp size={28}/></a>
+              <a data-tooltip="MySQL"><SiMysql size={28}/></a>
+              <a data-tooltip="Node.js"><FaNodeJs size={28}/></a>
+              <a data-tooltip="Java"><FaJava size={28}/></a>
+              <a data-tooltip="C++"><SiCplusplus size={28}/></a>
+              <a data-tooltip="React"><FaReact size={28}/></a>
+              <a data-tooltip="React Native"><FaReact size={28}/></a> 
+              <a data-tooltip="VS Code"><VscVscode size={28}/></a>
+              <a data-tooltip="XAMPP"><SiXampp size={28}/></a>
+              <a data-tooltip="Git"><LiaGit size={28}/></a>
+              <a data-tooltip="Figma"><FaFigma size={28}/></a>
+              <a data-tooltip="Photoshop"><SiAdobephotoshop size={28}/></a>
+
+              <a data-tooltip="HTML5"><FaHtml5 size={28}/></a>
+              <a data-tooltip="CSS3"><FaCss3Alt size={28}/></a>
+              <a data-tooltip="JavaScript"><FaJsSquare size={28}/></a>
+              <a data-tooltip="PHP"><FaPhp size={28}/></a>
+              <a data-tooltip="MySQL"><SiMysql size={28}/></a>
+              <a data-tooltip="Node.js"><FaNodeJs size={28}/></a>
+              <a data-tooltip="Java"><FaJava size={28}/></a>
+              <a data-tooltip="C++"><SiCplusplus size={28}/></a>
+              <a data-tooltip="React"><FaReact size={28}/></a>
+              <a data-tooltip="React Native"><FaReact size={28}/></a> 
+              <a data-tooltip="VS Code"><VscVscode size={28}/></a>
+              <a data-tooltip="XAMPP"><SiXampp size={28}/></a>
+              <a data-tooltip="Git"><LiaGit size={28}/></a>
+              <a data-tooltip="Figma"><FaFigma size={28}/></a>
+              <a data-tooltip="Photoshop"><SiAdobephotoshop size={28}/></a>
             </div>
         </div>
     </section>

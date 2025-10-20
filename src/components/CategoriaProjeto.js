@@ -9,6 +9,10 @@ const CategoriaProjeto = ({ categoria }) => {
         backgroundColor = "#4769ffff";
     } else if (categoria === "Web") {
         backgroundColor = "#1aa131ff";
+    } else if (categoria === "Backend") {
+        backgroundColor = "#ddcd3bff";
+    } else if (categoria === "Frontend") {
+        backgroundColor = "#961aa1ff";
     } else {
         backgroundColor = "#dcdcdc";
     }
