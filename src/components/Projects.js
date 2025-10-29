@@ -2,8 +2,10 @@ import imgproj1 from "../assets/projects/pinas-home.png";
 import imgproj2 from "../assets/projects/bul-app.gif";
 import imgproj3 from "../assets/projects/kiwi-home.png";
 import imgproj4 from "../assets/projects/stk-home.png";
+import imgproj5 from "../assets/projects/finsecure-dashboard.png";
 import CategoriaProjeto from "./../components/CategoriaProjeto";
-import { FaCss3Alt, FaJsSquare, FaReact } from "react-icons/fa";
+import { FaCss3Alt, FaJsSquare, FaReact, FaNodeJs } from "react-icons/fa";
+import { SiMysql } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { LiaGit } from "react-icons/lia";
 
@@ -13,6 +15,14 @@ function Projects() {
     <section className="Sec-projects">
       <h1>Projetos</h1>
 
+    <div className="filter-switch"> 
+      <label for="filter" class="switch" aria-label="Toggle Filter">
+        <input type="checkbox" id="filter" />
+        <span>Com Frontend</span>
+        <span>Somente Backend</span>
+      </label>
+    </div>
+
       <div className="projects">
 
         <div className="year-separator">
@@ -21,8 +31,8 @@ function Projects() {
           <div className="line"></div>
         </div>
 
-        <div className="project-card">
-          <img src={imgproj4} alt="Project 3" />
+        <div className="project-card" href="#">
+          <img src={imgproj4} alt="Project Stk Shop" />
 
           <div className="project-info">
             <div className="project-texts">
@@ -46,6 +56,31 @@ function Projects() {
           </div>
         </div>
 
+        <div className="project-card">
+          <img src={imgproj5} alt="Project FinSecure" />
+
+          <div className="project-info">
+            <div className="project-texts">
+              <h2>FinSecure</h2>
+                <div className="main-cat-proj">
+                  <CategoriaProjeto categoria="Faculdade"/>
+                  <CategoriaProjeto categoria="Web"/>
+                  <CategoriaProjeto categoria="Frontend"/>
+                  <CategoriaProjeto categoria="Backend"/>
+                </div>
+              <p>Sistema de controle de finanças pessoais desenvolvido com foco em segurança. O objetivo deste projeto, é fornecer uma plataforma visualmente amigável e intuitiva para organizar e gerenciar categorias e transações financeiras, permitindo aos usuários cadastrar, visualizar, editar e excluir suas finanças de forma eficiente e segura.</p>
+            </div>
+            
+            <div className="project-langs">
+              <a data-tooltip="React"><FaReact/></a>
+              <a data-tooltip="MySql"><SiMysql/></a>
+              <a data-tooltip="NodeJs"><FaNodeJs/></a>
+              <a data-tooltip="CSS3"><FaCss3Alt/></a>
+              <a data-tooltip="JavaScript"><FaJsSquare/></a>
+            </div>
+          </div>
+        </div>
+
         <div className="year-separator">
           <div className="line"></div>
             <span>2023</span>
@@ -53,7 +88,7 @@ function Projects() {
         </div>
         
         <div className="project-card">
-          <img src={imgproj1} alt="Project 1" />
+          <img src={imgproj1} alt="Project Pinas" />
 
           <div className="project-info">
             <div className="project-texts">
@@ -78,7 +113,7 @@ function Projects() {
         </div>
 
         <div className="project-card">
-          <img src={imgproj2} alt="Project 2" />
+          <img src={imgproj2} alt="Project Bússola Digital" />
 
           <div className="project-info">
             <div className="project-texts">
@@ -103,7 +138,7 @@ function Projects() {
         </div>
 
         <div className="project-card">
-          <img src={imgproj3} alt="Project 3" />
+          <img src={imgproj3} alt="Project App Kiwi" />
 
           <div className="project-info">
             <div className="project-texts">

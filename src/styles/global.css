@@ -201,6 +201,12 @@ body {
   animation: scroll 20s linear infinite;
 }
 
+.skills-track a {
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+
 .MainSec-projects {
   margin-top: 50px;
   justify-content: center;
@@ -243,6 +249,106 @@ body {
   text-transform: uppercase;
   font-size: 40px;
   text-align: center;
+}
+
+.filter-switch {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.switch {
+  --_switch-bg-clr: #070707;
+  --_switch-padding: 0px;
+  --_slider-bg-clr: #1f1f1f;
+  --_slider-bg-clr-on: #1f1f1f;
+  --_slider-txt-clr: #ffffff;
+  --_label-padding: 1rem 2rem;
+  --_switch-easing: cubic-bezier(
+    0.47,
+    0,
+    0.2,
+    0.8
+  ); /* easing on toggle switch */
+  color: white;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  position: relative;
+  isolation: isolate;
+  border: 1px solid #fff;
+  box-shadow: #fff 0px 0px 10px;
+}
+
+.switch input[type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.switch > span {
+  display: grid;
+  place-content: center;
+  padding: var(--_label-padding);
+}
+
+.switch::before,
+.switch::after {
+  content: "";
+  position: absolute;
+  border-radius: inherit;
+}
+
+.switch::before {
+  background-color: var(--_slider-bg-clr);
+  inset: var(--_switch-padding) 50% var(--_switch-padding)
+    var(--_switch-padding);
+  transition:
+    inset 500ms var(--_switch-easing),
+    background-color 500ms ease-in-out;
+  z-index: -1;
+}
+
+.switch::after {
+  background-color: var(--_switch-bg-clr);
+  inset: 0;
+  z-index: -2;
+}
+
+.switch:focus-within::after {
+  inset: 0rem;
+}
+.switch:has(input:checked):hover > span:first-of-type,
+.switch:has(input:not(:checked)):hover > span:last-of-type {
+  opacity: 1;
+  transition-delay: 0ms;
+  transition-duration: 100ms;
+}
+
+.switch:has(input:checked)::before {
+  background-color: var(--_slider-bg-clr-on);
+  inset: var(--_switch-padding) var(--_switch-padding) var(--_switch-padding)
+    50%;
+}
+
+.switch > span:last-of-type,
+.switch > input:checked + span:first-of-type {
+  opacity: 0.75;
+}
+
+.switch > input:checked ~ span:last-of-type {
+  opacity: 1;
 }
 
 .projects {
