@@ -3,8 +3,10 @@ import imgproj2 from "../assets/projects/bul-app.gif";
 import imgproj3 from "../assets/projects/kiwi-home.png";
 import imgproj4 from "../assets/projects/stk-home.png";
 import imgproj5 from "../assets/projects/finsecure-dashboard.png";
+import imgproj6 from "../assets/projects/vwcrud-home.png";
+import imgproj7 from "../assets/projects/mzk2bet-home.png";
 import CategoriaProjeto from "./../components/CategoriaProjeto";
-import { FaCss3Alt, FaJsSquare, FaReact, FaNodeJs } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaPhp } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { LiaGit } from "react-icons/lia";
@@ -29,6 +31,31 @@ function Projects() {
           <div className="line"></div>
             <span>2025</span>
           <div className="line"></div>
+        </div>
+
+        <div className="project-card" href="#">
+          <img src={imgproj7} alt="Project Mzk2Bet" />
+
+          <div className="project-info">
+            <div className="project-texts">
+              <h2>Mzk2Bet</h2>
+                <div className="main-cat-proj">
+                  <CategoriaProjeto categoria="Faculdade"/>
+                  <CategoriaProjeto categoria="Web"/>
+                  <CategoriaProjeto categoria="Frontend"/>
+                  <CategoriaProjeto categoria="Backend"/>
+                </div>
+              <p>StockSystem é a interface de usuário desenvolvida para interagir com a API StockSystem. O objetivo deste projeto é fornecer uma plataforma visualmente amigável e intuitiva para o gerenciamento de estoque, permitindo aos usuários realizar operações como cadastrar, visualizar, editar e excluir produtos de forma eficiente.</p>
+            </div>
+            
+            <div className="project-langs">
+              <a data-tooltip="React"><FaReact/></a>
+              <a data-tooltip="VS Code"><VscVscode/></a>
+              <a data-tooltip="Git"><LiaGit/></a>
+              <a data-tooltip="CSS3"><FaCss3Alt/></a>
+              <a data-tooltip="JavaScript"><FaJsSquare/></a>
+            </div>
+          </div>
         </div>
 
         <div className="project-card" href="#">
@@ -75,6 +102,37 @@ function Projects() {
               <a data-tooltip="React"><FaReact/></a>
               <a data-tooltip="MySql"><SiMysql/></a>
               <a data-tooltip="NodeJs"><FaNodeJs/></a>
+              <a data-tooltip="CSS3"><FaCss3Alt/></a>
+              <a data-tooltip="JavaScript"><FaJsSquare/></a>
+            </div>
+          </div>
+        </div>
+
+        <div className="year-separator">
+          <div className="line"></div>
+            <span>2024</span>
+          <div className="line"></div>
+        </div>
+
+        <div className="project-card">
+          <img src={imgproj6} alt="Project VWCrud" />
+
+          <div className="project-info">
+            <div className="project-texts">
+              <h2>VWCrud</h2>
+                <div className="main-cat-proj">
+                  <CategoriaProjeto categoria="Faculdade"/>
+                  <CategoriaProjeto categoria="Web"/>
+                  <CategoriaProjeto categoria="Frontend"/>
+                  <CategoriaProjeto categoria="Backend"/>
+                </div>
+              <p>CRUD para gerenciar modelos de carros da Volkswagen. O objetivo é fornecer uma interface parecida com a original, para realizar operações como cadastro, visualização, edição e exclusão de modelos de veículos e usuários. Possui funcionalidades de autenticação de usuários (cadastro e login) e gerenciamento de modelos de carros.</p>
+            </div>
+            
+            <div className="project-langs">
+              <a data-tooltip="PHP"><FaPhp/></a>
+              <a data-tooltip="MySql"><SiMysql/></a>
+              <a data-tooltip="HTML5"><FaHtml5/></a>
               <a data-tooltip="CSS3"><FaCss3Alt/></a>
               <a data-tooltip="JavaScript"><FaJsSquare/></a>
             </div>
