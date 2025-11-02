@@ -6,7 +6,7 @@ import imgproj5 from "../assets/projects/finsecure-dashboard.png";
 import imgproj6 from "../assets/projects/vwcrud-home.png";
 import imgproj7 from "../assets/projects/mzk2bet-home.png";
 import CategoriaProjeto from "./../components/CategoriaProjeto";
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaPhp } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaPhp, FaJava } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { LiaGit } from "react-icons/lia";
@@ -20,7 +20,7 @@ function Projects() {
     <div className="filter-switch"> 
       <label for="filter" class="switch" aria-label="Toggle Filter">
         <input type="checkbox" id="filter" />
-        <span>Com Frontend</span>
+        <span>Com Interface</span>
         <span>Somente Backend</span>
       </label>
     </div>
@@ -108,10 +108,73 @@ function Projects() {
           </div>
         </div>
 
+        <div className="project-card-back" href="#">
+
+          <div className="project-info-back">
+            <div className="project-texts-back">
+              <h2>Avaliação BackEnd</h2>
+                <div className="main-cat-proj">
+                  <CategoriaProjeto categoria="Faculdade"/>
+                  <CategoriaProjeto categoria="Backend"/>
+                </div>
+              <p>API REST construída com Node.js, Express e Sequelize que permite o gerenciamento de Usuários, Produtos, Categorias e Pedidos com associação N-N a produtos via prodOrder. A autenticação é feita via JWT e o banco de dados utilizado é MySQL.</p>
+            </div>
+            
+            <div className="project-langs">
+              <a data-tooltip="NodeJs"><FaNodeJs/></a>
+              <a data-tooltip="MySql"><SiMysql/></a>
+              <a data-tooltip="VS Code"><VscVscode/></a>
+              <a data-tooltip="JavaScript"><FaJsSquare/></a>
+            </div>
+          </div>
+        </div>
+
+        <div className="project-card-back" href="#">
+
+          <div className="project-info-back">
+            <div className="project-texts-back">
+              <h2>Atividade MVC</h2>
+                <div className="main-cat-proj">
+                  <CategoriaProjeto categoria="Faculdade"/>
+                  <CategoriaProjeto categoria="Backend"/>
+                </div>
+              <p>API REST construída com Node.js, Express e Sequelize, que permite o gerenciamento de Usuários, Tarefas e Projetos. A autenticação é feita via JWT e o banco de dados utilizado é MySQL.</p>
+            </div>
+            
+            <div className="project-langs">
+              <a data-tooltip="NodeJs"><FaNodeJs/></a>
+              <a data-tooltip="MySql"><SiMysql/></a>
+              <a data-tooltip="VS Code"><VscVscode/></a>
+              <a data-tooltip="JavaScript"><FaJsSquare/></a>
+            </div>
+          </div>
+        </div>
+
         <div className="year-separator">
           <div className="line"></div>
             <span>2024</span>
           <div className="line"></div>
+        </div>
+
+        <div className="project-card-back" href="#">
+
+          <div className="project-info-back">
+            <div className="project-texts-back">
+              <h2>OrgEventos</h2>
+                <div className="main-cat-proj">
+                  <CategoriaProjeto categoria="Faculdade"/>
+                  <CategoriaProjeto categoria="Backend"/>
+                </div>
+              <p>Sistema de gerenciamento de eventos desenvolvido em Java, operando via console (CLI) e utilizando JDBC para conexão direta com um banco de dados MySQL. O objetivo do projeto é fornecer uma plataforma para organizar e gerenciar Eventos, Locais, Organizadores e Participantes.</p>
+            </div>
+            
+            <div className="project-langs">
+              <a data-tooltip="Java"><FaJava/></a>
+              <a data-tooltip="MySql"><SiMysql/></a>
+              <a data-tooltip="VS Code"><VscVscode/></a>
+              <a data-tooltip="Git"><LiaGit/></a>
+            </div>
+          </div>
         </div>
 
         <div className="project-card">
