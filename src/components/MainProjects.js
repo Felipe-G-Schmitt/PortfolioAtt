@@ -11,7 +11,7 @@ function MainProjects() {
         <section className="MainSec-projects">
             <h1>Projetos em destaque</h1>
 
-            <div className="Mainproject-card">
+            <a className="Mainproject-card" href="https://github.com/function404/jogoDengue" target="_blank" rel="noopener noreferrer">
             <img src={EcoHealthhome} alt="Projecto EcoHealth" />
 
             <div className="project-info">
@@ -34,9 +34,9 @@ function MainProjects() {
                     <a data-tooltip="React Native"><FaReact/></a>
                 </div>
             </div>
-            </div>
+            </a>
 
-            <div className="Mainproject-card">
+            <a className="Mainproject-card" href="https://github.com/function404/splatgame_" target="_blank" rel="noopener noreferrer">
             <img src={SplatGamehome} alt="Projeto SplatGame"/>
 
             <div className="project-info">
@@ -59,7 +59,7 @@ function MainProjects() {
                     <a data-tooltip="React Native"><FaReact/></a>
                 </div>
             </div>
-            </div>
+            </a>
         </section>
     );
 }

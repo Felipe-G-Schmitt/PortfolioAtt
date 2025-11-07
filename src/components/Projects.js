@@ -17,13 +17,13 @@ function Projects() {
     <section className="Sec-projects">
       <h1>Projetos</h1>
 
-    <div className="filter-switch"> 
+    {/* <div className="filter-switch"> 
       <label for="filter" class="switch" aria-label="Toggle Filter">
         <input type="checkbox" id="filter" />
         <span>Com Interface</span>
         <span>Somente Backend</span>
       </label>
-    </div>
+    </div> */}
 
       <div className="projects">
 
@@ -33,8 +33,9 @@ function Projects() {
           <div className="line"></div>
         </div>
 
-        <div className="project-card" href="#">
-          <img src={imgproj7} alt="Project Mzk2Bet" />
+        
+        <a className="project-card" href="https://github.com/drypzz/mzk2bet/tree/master" target="_blank" rel="noopener noreferrer">
+          <img src={imgproj7} alt="Project Mzk2Bet"/>
 
           <div className="project-info">
             <div className="project-texts">
@@ -56,9 +57,9 @@ function Projects() {
               <a data-tooltip="JavaScript"><FaJsSquare/></a>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div className="project-card" href="#">
+        <a className="project-card" href="https://github.com/drypzz/front-stocksystem" target="_blank" rel="noopener noreferrer">
           <img src={imgproj4} alt="Project Stk Shop" />
 
           <div className="project-info">
@@ -81,9 +82,9 @@ function Projects() {
               <a data-tooltip="JavaScript"><FaJsSquare/></a>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div className="project-card">
+        <a className="project-card" href="https://github.com/Felipe-G-Schmitt/finSecure" target="_blank" rel="noopener noreferrer">
           <img src={imgproj5} alt="Project FinSecure" />
 
           <div className="project-info">
@@ -106,9 +107,9 @@ function Projects() {
               <a data-tooltip="JavaScript"><FaJsSquare/></a>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div className="project-card-back" href="#">
+        <a className="project-card-back" href="https://github.com/Felipe-G-Schmitt/AvaliacaoBackend" target="_blank" rel="noopener noreferrer">
 
           <div className="project-info-back">
             <div className="project-texts-back">
@@ -127,9 +128,9 @@ function Projects() {
               <a data-tooltip="JavaScript"><FaJsSquare/></a>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div className="project-card-back" href="#">
+        <a className="project-card-back" href="https://github.com/Felipe-G-Schmitt/AtividadeMVC" target="_blank" rel="noopener noreferrer">
 
           <div className="project-info-back">
             <div className="project-texts-back">
@@ -148,7 +149,7 @@ function Projects() {
               <a data-tooltip="JavaScript"><FaJsSquare/></a>
             </div>
           </div>
-        </div>
+        </a>
 
         <div className="year-separator">
           <div className="line"></div>
@@ -156,7 +157,7 @@ function Projects() {
           <div className="line"></div>
         </div>
 
-        <div className="project-card-back" href="#">
+        <a className="project-card-back" href="https://github.com/Felipe-G-Schmitt/OrgEventos" target="_blank" rel="noopener noreferrer">
 
           <div className="project-info-back">
             <div className="project-texts-back">
@@ -175,9 +176,9 @@ function Projects() {
               <a data-tooltip="Git"><LiaGit/></a>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div className="project-card">
+        <a className="project-card" href="https://github.com/function404/vwcrud_" target="_blank" rel="noopener noreferrer">
           <img src={imgproj6} alt="Project VWCrud" />
 
           <div className="project-info">
@@ -200,7 +201,7 @@ function Projects() {
               <a data-tooltip="JavaScript"><FaJsSquare/></a>
             </div>
           </div>
-        </div>
+        </a>
 
         <div className="year-separator">
           <div className="line"></div>
@@ -208,7 +209,7 @@ function Projects() {
           <div className="line"></div>
         </div>
         
-        <div className="project-card">
+        <a className="project-card" href="https://github.com/Felipe-G-Schmitt/pinas" target="_blank" rel="noopener noreferrer">
           <img src={imgproj1} alt="Project Pinas" />
 
           <div className="project-info">
@@ -231,9 +232,9 @@ function Projects() {
               <a data-tooltip="JavaScript"><FaJsSquare/></a>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div className="project-card">
+        <a className="project-card" href="https://github.com/Felipe-G-Schmitt/AvaliacaoFelipeELucas" target="_blank" rel="noopener noreferrer">
           <img src={imgproj2} alt="Project Bússola Digital" />
 
           <div className="project-info">
@@ -256,9 +257,9 @@ function Projects() {
               <a data-tooltip="JavaScript"><FaJsSquare/></a>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div className="project-card">
+        <a className="project-card" href="https://github.com/Felipe-G-Schmitt/TodoAppKiwi" target="_blank" rel="noopener noreferrer">
           <img src={imgproj3} alt="Project App Kiwi" />
 
           <div className="project-info">
@@ -281,7 +282,7 @@ function Projects() {
               <a data-tooltip="JavaScript"><FaJsSquare/></a>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </section>
     </>
