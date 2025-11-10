@@ -5,7 +5,7 @@ import { IoMdMail, IoIosPin } from "react-icons/io";
 function About() {
   return (
     <>
-    <section className="About">
+    <section className="About" id="About">
         <div className="image-wrapper">
             <img src={profile} alt="profile picture" className="profile"/>
         <div className="image-overlay"></div>

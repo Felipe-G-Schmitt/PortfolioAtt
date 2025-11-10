@@ -1,12 +1,15 @@
 import EcoHealthhome from "../assets/projects/ecoHealth-home.png";
 import SplatGamehome from "../assets/projects/splatgame-home.png";
 import CategoriaProjeto from "./../components/CategoriaProjeto";
-import { FaCss3Alt, FaJsSquare, FaReact, FaNpm } from "react-icons/fa";
+import { FaReact, FaNpm } from "react-icons/fa";
 import { SiExpo } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
-import { LiaGit } from "react-icons/lia";
+import { useState } from "react";
+
 
 function MainProjects() {
+    const [expand, setExpand] = useState(false);
+
     return (
         <section className="MainSec-projects">
             <h1>Projetos em destaque</h1>
@@ -23,7 +26,16 @@ function MainProjects() {
                         <CategoriaProjeto categoria="Frontend"/>
                         <CategoriaProjeto categoria="Backend"/>
                     </div>
-                <p>Jogo sério para o público infantil, onde os usuários terão alguns cenários para identificar locais, objetos ou ações que estejam ajudando na proliferação do mosquito aedes aegypti. O objetivo é educar sobre as práticas de prevenção contra a Dengue, mas de uma forma mais atrativa para o público infantil.</p>
+                <div
+                    className={`project-description ${expand ? "expanded" : ""}`}
+                    onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    setExpand(!expand);
+                    }}
+                >
+                    <p>Jogo sério para o público infantil, onde os usuários terão alguns cenários para identificar locais, objetos ou ações que estejam ajudando na proliferação do mosquito aedes aegypti. O objetivo é educar sobre as práticas de prevenção contra a Dengue, mas de uma forma mais atrativa para o público infantil.</p>
+                </div>
                 </div>
             
                 <div className="project-langs">
@@ -48,7 +60,16 @@ function MainProjects() {
                         <CategoriaProjeto categoria="Frontend"/>
                         <CategoriaProjeto categoria="Backend"/>
                     </div>
-                <p>Em Splat Game, os jogadores são desafiados a tocar em objetos que caem na tela para acumular a maior pontuação possível em diversas fases, cada uma com sua própria temática, como Gastronomia, Administração, Enfermagem e Análise e Desenvolvimento de Sistemas. A cada objeto tocado, pontos são somados e o nível de dificuldade aumenta.</p>
+                <div
+                    className={`project-description ${expand ? "expanded" : ""}`}
+                    onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    setExpand(!expand);
+                    }}
+                >
+                    <p>Em Splat Game, os jogadores são desafiados a tocar em objetos que caem na tela para acumular a maior pontuação possível em diversas fases, cada uma com sua própria temática, como Gastronomia, Administração, Enfermagem e Análise e Desenvolvimento de Sistemas. A cada objeto tocado, pontos são somados e o nível de dificuldade aumenta.</p>
+                </div>
                 </div>
             
                 <div className="project-langs">

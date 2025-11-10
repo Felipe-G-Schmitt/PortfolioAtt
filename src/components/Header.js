@@ -7,9 +7,9 @@ function Header() {
     <header>
       <img src={logo} class="logo" alt="Logo" />
       <div class="nav-links">
-        <a>Início</a>
-        <a>Projetos</a>
-        <a>Contato</a>
+        <a href="#About">Início</a>
+        <a href="#projects">Projetos</a>
+        {/* <a>Contato</a> */}
       </div>
       
       <div class="header-icons">

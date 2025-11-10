@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: white #121212;
+}
+
 header {
   position: relative;
   display: flex;
@@ -49,7 +54,7 @@ footer {
 
 body {
   margin: 0;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   background: #121212;
   color: #fff;
 }
@@ -110,7 +115,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  width: 40%; 
+  width: 40%;
   height: 100%;
   background: linear-gradient(to left, #121212, transparent);
 }
@@ -119,14 +124,14 @@ body {
   margin-left: 25px;
   height: 272px;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
 
 .infos h1 {
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 39px;
 }
 
 .infos p {
@@ -178,7 +183,7 @@ body {
   justify-content: center;
 }
 
-.langTolls h1{
+.langTolls h1 {
   text-transform: uppercase;
   font-size: 40px;
   text-align: center;
@@ -219,7 +224,7 @@ body {
   flex-wrap: wrap;
 }
 
-.MainSec-projects h1{
+.MainSec-projects h1 {
   text-transform: uppercase;
   font-size: 40px;
   text-align: center;
@@ -246,7 +251,7 @@ body {
   justify-content: center;
 }
 
-.Sec-projects h1{
+.Sec-projects h1 {
   text-transform: uppercase;
   font-size: 40px;
   text-align: center;
@@ -315,8 +320,7 @@ body {
   background-color: var(--_slider-bg-clr);
   inset: var(--_switch-padding) 50% var(--_switch-padding)
     var(--_switch-padding);
-  transition:
-    inset 500ms var(--_switch-easing),
+  transition: inset 500ms var(--_switch-easing),
     background-color 500ms ease-in-out;
   z-index: -1;
 }
@@ -399,7 +403,7 @@ body {
 
 .project-info-back {
   margin-left: 10px;
-  width: auto;  
+  width: auto;
   display: flex;
   padding-right: 15px;
   flex-direction: column;
@@ -440,7 +444,7 @@ body {
 }
 
 .project-card:hover {
-  width: 800px; 
+  width: 800px;
   box-shadow: #fff 0px 0px 25px;
 }
 
@@ -451,7 +455,7 @@ body {
 
 .project-info {
   margin-left: 20px;
-  width: auto;  
+  width: auto;
   display: flex;
   padding-right: 15px;
   flex-direction: column;
@@ -476,7 +480,8 @@ body {
 
 .main-cat-proj {
   display: flex;
-  gap: 10px;
+  column-gap: 10px;
+  flex-wrap: wrap;
 }
 
 .cat-proj {
@@ -544,14 +549,242 @@ body {
 
 @media (max-width: 1920px) {
   @keyframes scroll {
-  from {
-    transform: translateX(0);
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
   }
-  to {
-    transform: translateX(-50%);
-  }
-}
   .skills-track {
     animation-play-state: running;
+  }
+}
+
+@media (max-width: 1200px) {
+  .nav-links {
+    gap: 50px;
+  }
+
+  .skills {
+    width: 70%;
+  }
+
+  .project-card-back {
+    width: 80%;
+    max-width: 650px;
+  }
+
+  .project-card {
+    display: flex;
+    width: 380px;
+    height: 400px;
+    background-size: cover;
+    overflow: hidden;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    border: 2px solid #fff;
+    box-shadow: #fff 0px 0px 10px;
+    transition: width 0.5s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .project-card:hover {
+    width: 800px;
+    box-shadow: #fff 0px 0px 25px;
+  }
+
+  .year-separator {
+    width: 80%;
+  }
+}
+
+@media (max-width: 880px) {
+  .infos h1 {
+    font-size: 30px;
+  }
+
+  .Mainproject-card {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .project-langs {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .Sec-projects {
+    padding: 0 10px;
+  }
+
+  .project-card {
+    width: 70%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .project-card:hover {
+    width: 70%;
+    box-shadow: #fff 0px 0px 10px;
+  }
+
+  .project-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-info {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .project-texts {
+    height: auto;
+    overflow: visible;
+  }
+
+  .project-info .project-texts h2 {
+    font-size: 25px;
+  }
+
+  .project-description p {
+    max-height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: max-height 0.5s ease;
+    white-space: nowrap;
+  }
+
+  .project-description.expanded p {
+    max-height: 500px;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+  }
+
+  .project-card-back {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .project-info-back {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .project-info-back .project-texts-back h2 {
+    font-size: 25px;
+  }
+
+  .project-texts-back {
+    height: auto;
+    padding-bottom: 10px;
+    overflow: visible;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px 15px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .About {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .image-wrapper {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .image-overlay {
+    width: 100%;
+    height: 50%;
+    top: auto;
+    bottom: 0;
+    background: linear-gradient(to top, #121212, transparent);
+  }
+
+  .infos {
+    margin-left: 0;
+    margin-top: 20px;
+    height: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .infos h1 {
+    font-size: 30px;
+  }
+
+  .socials {
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .social-item {
+    justify-content: center;
+  }
+
+  .langTolls h1,
+  .MainSec-projects h1,
+  .Sec-projects h1 {
+    font-size: 30px;
+  }
+
+  .skills {
+    width: 90%;
+  }
+
+  footer {
+    padding: 20px 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-icons {
+    gap: 15px;
+  }
+
+  .skills-track {
+    gap: 20px;
+    animation-duration: 15s;
+  }
+
+  .switch {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+    font-size: 14px;
+  }
+
+  .switch > span {
+    padding: 0.8rem 1.5rem;
+  }
+
+  .year-separator {
+    width: 90%;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+
+  .cat-proj p {
+    font-size: 10px;
   }
 }
