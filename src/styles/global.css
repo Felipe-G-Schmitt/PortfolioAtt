@@ -4,9 +4,27 @@
   padding: 0;
 }
 
+:root {
+  --background-color: #121212;
+  --text-color: #fff;
+  --link-border-color: #fff;
+  --box-shadow-color: #fff;
+  --card-background-color: transparent;
+  --gradient-color: #121212;
+}
+
+.light-mode {
+  --background-color: #ffffff;
+  --text-color: #121212;
+  --link-border-color: #121212;
+  --box-shadow-color: rgba(0, 0, 0, 0.15);
+  --card-background-color: #f7f7f7;
+  --gradient-color: #ffffff;
+}
+
 html {
   scroll-behavior: smooth;
-  scrollbar-color: white #121212;
+  scrollbar-color: var(--text-color) var(--background-color);
 }
 
 header {
@@ -15,7 +33,8 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: #121212;
+  background-color: var(--background-color);
+  transition: background-color 0.3s ease-in-out;
 }
 
 footer {
@@ -25,20 +44,15 @@ footer {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background-color: #121212;
-  color: #fff;
-}
-
-.footer-icons {
-  display: flex;
-  gap: 20px;
-  margin-bottom: 5px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .footer-icons a {
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
-  border: 2px white solid;
+  border: 2px var(--link-border-color) solid;
   height: 42px;
   padding: 10px;
   border-radius: 50%;
@@ -49,14 +63,15 @@ footer {
 .footer-icons a:hover {
   transform: scale(1.2);
   transition: ease-in-out 0.3s;
-  box-shadow: #fff 0px 0px 5px;
+  box-shadow: var(--box-shadow-color) 0px 0px 5px;
 }
 
 body {
   margin: 0;
   font-family: "Jost", sans-serif;
-  background: #121212;
-  color: #fff;
+  background: var(--background-color);
+  color: var(--text-color);
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .nav-links {
@@ -68,7 +83,7 @@ body {
 }
 
 .nav-links a {
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
   transform: scale(1);
   transition: transform 0.3s ease-in-out;
@@ -117,7 +132,11 @@ body {
   right: 0;
   width: 40%;
   height: 100%;
-  background: linear-gradient(to left, #121212, transparent);
+  background: linear-gradient(to left, var(--gradient-color), transparent);
+}
+
+.image-gradient {
+  background: var(--gradient-color);
 }
 
 .infos {
@@ -162,9 +181,9 @@ body {
 }
 
 .icons a {
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
-  border: 2px white solid;
+  border: 2px var(--link-border-color) solid;
   height: 42px;
   padding: 10px;
   border-radius: 50%;
@@ -175,7 +194,7 @@ body {
 .icons a:hover {
   transform: scale(1.2);
   transition: ease-in-out 0.3s;
-  box-shadow: #fff 0px 0px 5px;
+  box-shadow: var(--box-shadow-color) 0px 0px 5px;
 }
 
 .langTolls {
@@ -193,7 +212,7 @@ body {
   display: flex;
   width: 50%;
   margin: 10px auto 0 auto;
-  border: 2px solid #fff;
+  border: 2px solid var(--link-border-color);
   padding: 10px 20px;
   border-radius: 90px / 90px;
   overflow: hidden;
@@ -208,7 +227,7 @@ body {
 
 .skills-track a {
   cursor: pointer;
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
 }
 
@@ -237,13 +256,14 @@ body {
   background-size: cover;
   overflow: hidden;
   padding: 5px;
-  color: white;
+  color: var(--text-color);
   text-align: center;
-  border: 2px solid #fff;
-  box-shadow: #fff 0px 0px 10px;
-  transition: width 0.5s ease, box-shadow 0.3s ease;
+  border: 2px solid var(--link-border-color);
+  box-shadow: var(--box-shadow-color) 0px 0px 10px;
+  transition: width 0.5s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
   cursor: pointer;
   text-decoration: none;
+  background-color: var(--card-background-color); 
 }
 
 .Sec-projects {
@@ -376,13 +396,13 @@ body {
 .year-separator .line {
   flex-grow: 1;
   height: 1px;
-  background-color: #fff;
+  background-color: var(--link-border-color);
 }
 
 .year-separator span {
   font-size: 18px;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--text-color);
 }
 
 .project-card-back {
@@ -392,13 +412,14 @@ body {
   background-size: cover;
   overflow: hidden;
   padding: 5px;
-  color: white;
+  color: var(--text-color);
   text-align: center;
-  border: 2px solid #fff;
-  box-shadow: #fff 0px 0px 10px;
-  transition: width 0.5s ease, box-shadow 0.3s ease;
+  border: 2px solid var(--link-border-color);
+  box-shadow: var(--box-shadow-color) 0px 0px 10px;
+  transition: width 0.5s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
   cursor: pointer;
   text-decoration: none;
+  background-color: var(--card-background-color); 
 }
 
 .project-info-back {
@@ -434,18 +455,19 @@ body {
   background-size: cover;
   overflow: hidden;
   padding: 5px;
-  color: white;
+  color: var(--text-color);
   text-align: center;
-  border: 2px solid #fff;
-  box-shadow: #fff 0px 0px 10px;
-  transition: width 0.5s ease, box-shadow 0.3s ease;
+  border: 2px solid var(--link-border-color);
+  box-shadow: var(--box-shadow-color) 0px 0px 10px;
+  transition: width 0.5s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
   cursor: pointer;
   text-decoration: none;
+  background-color: var(--card-background-color); 
 }
 
 .project-card:hover {
   width: 800px;
-  box-shadow: #fff 0px 0px 25px;
+  box-shadow: var(--box-shadow-color) 0px 0px 25px;
 }
 
 .project-card img {
@@ -500,10 +522,10 @@ body {
 }
 
 .project-langs a {
-  color: #fff;
+  color: var(--text-color);
   cursor: pointer;
   text-decoration: none;
-  border: 2px white solid;
+  border: 2px var(--link-border-color) solid;
   height: 42px;
   padding: 10px;
   border-radius: 50%;
