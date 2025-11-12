@@ -39,11 +39,11 @@ function MainProjects() {
                 </div>
             
                 <div className="project-langs">
-                    <a data-tooltip="React"><FaReact/></a>
-                    <a data-tooltip="VS Code"><VscVscode/></a>
-                    <a data-tooltip="Npm"><FaNpm/></a>
-                    <a data-tooltip="Expo"><SiExpo /></a>
-                    <a data-tooltip="React Native"><FaReact/></a>
+                    <div className="lang" data-tooltip="React"><FaReact/></div>
+                    <div className="lang" data-tooltip="VS Code"><VscVscode/></div>
+                    <div className="lang" data-tooltip="Npm"><FaNpm/></div>
+                    <div className="lang" data-tooltip="Expo"><SiExpo /></div>
+                    <div className="lang" data-tooltip="React Native"><FaReact/></div>
                 </div>
             </div>
             </a>
@@ -73,11 +73,11 @@ function MainProjects() {
                 </div>
             
                 <div className="project-langs">
-                    <a data-tooltip="React"><FaReact/></a>
-                    <a data-tooltip="VS Code"><VscVscode/></a>
-                    <a data-tooltip="Npm"><FaNpm/></a>
-                    <a data-tooltip="Expo"><SiExpo /></a>
-                    <a data-tooltip="React Native"><FaReact/></a>
+                    <div className="lang" data-tooltip="React"><FaReact/></div>
+                    <div className="lang" data-tooltip="VS Code"><VscVscode/></div>
+                    <div className="lang" data-tooltip="Npm"><FaNpm/></div>
+                    <div className="lang" data-tooltip="Expo"><SiExpo /></div>
+                    <div className="lang" data-tooltip="React Native"><FaReact/></div>
                 </div>
             </div>
             </a>

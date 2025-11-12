@@ -63,11 +63,11 @@ function Projects() {
             </div>
             
             <div className="project-langs">
-              <a data-tooltip="React"><FaReact/></a>
-              <a data-tooltip="VS Code"><VscVscode/></a>
-              <a data-tooltip="Git"><LiaGit/></a>
-              <a data-tooltip="CSS3"><FaCss3Alt/></a>
-              <a data-tooltip="JavaScript"><FaJsSquare/></a>
+              <div className="lang" data-tooltip="React"><FaReact/></div>
+              <div className="lang" data-tooltip="VS Code"><VscVscode/></div>
+              <div className="lang" data-tooltip="Git"><LiaGit/></div>
+              <div className="lang" data-tooltip="CSS3"><FaCss3Alt/></div>
+              <div className="lang" data-tooltip="JavaScript"><FaJsSquare/></div>
             </div>
           </div>
         </a>
@@ -97,11 +97,11 @@ function Projects() {
             </div>
             
             <div className="project-langs">
-              <a data-tooltip="React"><FaReact/></a>
-              <a data-tooltip="VS Code"><VscVscode/></a>
-              <a data-tooltip="Git"><LiaGit/></a>
-              <a data-tooltip="CSS3"><FaCss3Alt/></a>
-              <a data-tooltip="JavaScript"><FaJsSquare/></a>
+              <div className="lang" data-tooltip="React"><FaReact/></div>
+              <div className="lang" data-tooltip="VS Code"><VscVscode/></div>
+              <div className="lang" data-tooltip="Git"><LiaGit/></div>
+              <div className="lang" data-tooltip="CSS3"><FaCss3Alt/></div>
+              <div className="lang" data-tooltip="JavaScript"><FaJsSquare/></div>
             </div>
           </div>
         </a>
@@ -131,11 +131,11 @@ function Projects() {
             </div>
             
             <div className="project-langs">
-              <a data-tooltip="React"><FaReact/></a>
-              <a data-tooltip="MySql"><SiMysql/></a>
-              <a data-tooltip="NodeJs"><FaNodeJs/></a>
-              <a data-tooltip="CSS3"><FaCss3Alt/></a>
-              <a data-tooltip="JavaScript"><FaJsSquare/></a>
+              <div className="lang" data-tooltip="React"><FaReact/></div>
+              <div className="lang" data-tooltip="MySql"><SiMysql/></div>
+              <div className="lang" data-tooltip="NodeJs"><FaNodeJs/></div>
+              <div className="lang" data-tooltip="CSS3"><FaCss3Alt/></div>
+              <div className="lang" data-tooltip="JavaScript"><FaJsSquare/></div>
             </div>
           </div>
         </a>
@@ -153,10 +153,10 @@ function Projects() {
             </div>
             
             <div className="project-langs">
-              <a data-tooltip="NodeJs"><FaNodeJs/></a>
-              <a data-tooltip="MySql"><SiMysql/></a>
-              <a data-tooltip="VS Code"><VscVscode/></a>
-              <a data-tooltip="JavaScript"><FaJsSquare/></a>
+              <div className="lang" data-tooltip="NodeJs"><FaNodeJs/></div>
+              <div className="lang" data-tooltip="MySql"><SiMysql/></div>
+              <div className="lang" data-tooltip="VS Code"><VscVscode/></div>
+              <div className="lang" data-tooltip="JavaScript"><FaJsSquare/></div>
             </div>
           </div>
         </a>
@@ -174,10 +174,10 @@ function Projects() {
             </div>
             
             <div className="project-langs">
-              <a data-tooltip="NodeJs"><FaNodeJs/></a>
-              <a data-tooltip="MySql"><SiMysql/></a>
-              <a data-tooltip="VS Code"><VscVscode/></a>
-              <a data-tooltip="JavaScript"><FaJsSquare/></a>
+              <div className="lang" data-tooltip="NodeJs"><FaNodeJs/></div>
+              <div className="lang" data-tooltip="MySql"><SiMysql/></div>
+              <div className="lang" data-tooltip="VS Code"><VscVscode/></div>
+              <div className="lang" data-tooltip="JavaScript"><FaJsSquare/></div>
             </div>
           </div>
         </a>
@@ -207,11 +207,11 @@ function Projects() {
             </div>
             
             <div className="project-langs">
-              <a data-tooltip="PHP"><FaPhp/></a>
-              <a data-tooltip="MySql"><SiMysql/></a>
-              <a data-tooltip="HTML5"><FaHtml5/></a>
-              <a data-tooltip="CSS3"><FaCss3Alt/></a>
-              <a data-tooltip="JavaScript"><FaJsSquare/></a>
+              <div className="lang" data-tooltip="PHP"><FaPhp/></div>
+              <div className="lang" data-tooltip="MySql"><SiMysql/></div>
+              <div className="lang" data-tooltip="HTML5"><FaHtml5/></div>
+              <div className="lang" data-tooltip="CSS3"><FaCss3Alt/></div>
+              <div className="lang" data-tooltip="JavaScript"><FaJsSquare/></div>
             </div>
           </div>
         </a>
@@ -235,10 +235,10 @@ function Projects() {
             </div>
             
             <div className="project-langs">
-              <a data-tooltip="Java"><FaJava/></a>
-              <a data-tooltip="MySql"><SiMysql/></a>
-              <a data-tooltip="VS Code"><VscVscode/></a>
-              <a data-tooltip="Git"><LiaGit/></a>
+              <div className="lang" data-tooltip="Java"><FaJava/></div>
+              <div className="lang" data-tooltip="MySql"><SiMysql/></div>
+              <div className="lang" data-tooltip="VS Code"><VscVscode/></div>
+              <div className="lang" data-tooltip="Git"><LiaGit/></div>
             </div>
           </div>
         </a>
@@ -268,11 +268,11 @@ function Projects() {
             </div>
             
             <div className="project-langs">
-              <a data-tooltip="PHP"><FaPhp/></a>
-              <a data-tooltip="MySql"><SiMysql/></a>
-              <a data-tooltip="HTML5"><FaHtml5/></a>
-              <a data-tooltip="CSS3"><FaCss3Alt/></a>
-              <a data-tooltip="JavaScript"><FaJsSquare/></a>
+              <div className="lang" data-tooltip="PHP"><FaPhp/></div>
+              <div className="lang" data-tooltip="MySql"><SiMysql/></div>
+              <div className="lang" data-tooltip="HTML5"><FaHtml5/></div>
+              <div className="lang" data-tooltip="CSS3"><FaCss3Alt/></div>
+              <div className="lang" data-tooltip="JavaScript"><FaJsSquare/></div>
             </div>
           </div>
         </a>
@@ -308,11 +308,11 @@ function Projects() {
             </div>
 
             <div className="project-langs">
-              <a data-tooltip="React Native"><FaReact/></a>
-              <a data-tooltip="VS Code"><VscVscode/></a>
-              <a data-tooltip="Git"><LiaGit/></a>
-              <a data-tooltip="CSS3"><FaCss3Alt/></a>
-              <a data-tooltip="JavaScript"><FaJsSquare/></a>
+              <div className="lang" data-tooltip="React Native"><FaReact/></div>
+              <div className="lang" data-tooltip="VS Code"><VscVscode/></div>
+              <div className="lang" data-tooltip="Git"><LiaGit/></div>
+              <div className="lang" data-tooltip="CSS3"><FaCss3Alt/></div>
+              <div className="lang" data-tooltip="JavaScript"><FaJsSquare/></div>
             </div>
           </div>
         </a>
@@ -342,11 +342,11 @@ function Projects() {
             </div>
             
             <div className="project-langs">
-              <a data-tooltip="React Native"><FaReact/></a>
-              <a data-tooltip="VS Code"><VscVscode/></a>
-              <a data-tooltip="Git"><LiaGit/></a>
-              <a data-tooltip="CSS3"><FaCss3Alt/></a>
-              <a data-tooltip="JavaScript"><FaJsSquare/></a>
+              <div className="lang" data-tooltip="React Native"><FaReact/></div>
+              <div className="lang" data-tooltip="VS Code"><VscVscode/></div>
+              <div className="lang" data-tooltip="Git"><LiaGit/></div>
+              <div className="lang" data-tooltip="CSS3"><FaCss3Alt/></div>
+              <div className="lang" data-tooltip="JavaScript"><FaJsSquare/></div>
             </div>
           </div>
         </a>
@@ -376,11 +376,11 @@ function Projects() {
             </div>
             
             <div className="project-langs">
-              <a data-tooltip="React Native"><FaReact/></a>
-              <a data-tooltip="VS Code"><VscVscode/></a>
-              <a data-tooltip="Git"><LiaGit/></a>
-              <a data-tooltip="CSS3"><FaCss3Alt/></a>
-              <a data-tooltip="JavaScript"><FaJsSquare/></a>
+              <div className="lang" data-tooltip="React Native"><FaReact/></div>
+              <div className="lang" data-tooltip="VS Code"><VscVscode/></div>
+              <div className="lang" data-tooltip="Git"><LiaGit/></div>
+              <div className="lang" data-tooltip="CSS3"><FaCss3Alt/></div>
+              <div className="lang" data-tooltip="JavaScript"><FaJsSquare/></div>
             </div>
           </div>
         </a>

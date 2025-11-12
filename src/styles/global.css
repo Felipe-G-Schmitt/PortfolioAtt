@@ -499,7 +499,7 @@ body {
   justify-content: space-between;
 }
 
-.project-langs a {
+.project-langs .lang{
   color: #fff;
   cursor: pointer;
   text-decoration: none;
@@ -512,7 +512,7 @@ body {
   position: relative;
 }
 
-.project-langs a::after {
+.project-langs .lang::after {
   content: attr(data-tooltip);
   position: absolute;
   bottom: 130%;
@@ -529,7 +529,7 @@ body {
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.project-langs a::before {
+.project-langs .lang::before {
   content: "";
   position: absolute;
   bottom: 120%;
@@ -542,8 +542,8 @@ body {
   transition: opacity 0.3s ease;
 }
 
-.project-langs a:hover::after,
-.project-langs a:hover::before {
+.project-langs .lang:hover::after,
+.project-langs .lang:hover::before {
   opacity: 1;
 }
 

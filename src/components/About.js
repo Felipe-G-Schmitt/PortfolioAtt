@@ -7,7 +7,7 @@ function About() {
     <>
     <section className="About" id="About">
         <div className="image-wrapper">
-            <img src={profile} alt="profile picture" className="profile"/>
+            <img src={profile} alt="profile" className="profile"/>
         <div className="image-overlay"></div>
         </div>
     <div className="image-gradient" />
