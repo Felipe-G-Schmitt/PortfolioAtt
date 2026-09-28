@@ -11,24 +11,30 @@ function About() {
                 <img src={profile} alt="profile" className="profile"/>
             </div>
             <section className="icons">
-                <a href="https://github.com/Felipe-G-Schmitt" target="_blank" rel="noopener noreferrer">
-                    <FaGithub className="iconGH"/>
-                </a>
+                <div className="border-icon"> 
+                    <a href="https://github.com/Felipe-G-Schmitt" target="_blank" rel="noopener noreferrer">
+                        <FaGithub className="iconGH"/>
+                    </a>
+                </div>
                 
-                <a href="https://www.linkedin.com/in/felipe-gabriel-schmitt/" target="_blank" rel="noopener noreferrer">
-                    <FaLinkedin className="iconLk"/>
-                </a>
-                
-                <a href="https://www.instagram.com/feeeepers/" target="_blank" rel="noopener noreferrer">
-                    <FaInstagram className="iconInsta"/>
-                </a>
+                <div className="border-icon">
+                    <a href="https://www.linkedin.com/in/felipe-gabriel-schmitt/" target="_blank" rel="noopener noreferrer">
+                        <FaLinkedin className="iconLk"/>
+                    </a>
+                </div>
+
+                <div className="border-icon">
+                    <a href="https://www.instagram.com/feeeepers/" target="_blank" rel="noopener noreferrer">
+                        <FaInstagram className="iconInsta"/>
+                    </a>
+                </div>
             </section>
         </div>
     <div className="image-gradient" />
 
     <div className="infos">
         <h1>Felipe Gabriel Schmitt</h1>
-        <p>19 anos / Joinville - SC</p>
+        <p>20 anos / Joinville - SC</p>
         <p>Análise e desenvolvimento de sistemas</p>
 
         <div className="socials">

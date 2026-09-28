@@ -116,6 +116,21 @@ body {
   margin-top: auto;
 }
 
+.border-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.border-icon a:hover {
+  transition: ease-in-out 0.3s;
+  box-shadow: #fff 0px 0px 5px;
+}
+
 .icons a {
   color: #fff;
   text-decoration: none;
@@ -123,12 +138,12 @@ body {
   height: 42px;
   padding: 10px;
   border-radius: 50%;
-  transform: scale(1);
+  transform: rotate(0deg) scale(1);
   transition: ease-in-out 0.3s;
 }
 
 .icons a:hover {
-  transform: scale(1.2);
+  transform: rotate(45deg) scale(1.1);
   transition: ease-in-out 0.3s;
   box-shadow: #fff 0px 0px 5px;
 }
@@ -152,7 +167,7 @@ body {
   right: 0;
   width: 40%;
   height: 100%;
-  background: linear-gradient(to left, #121212, transparent);
+  background: linear-gradient(to left, #383129, transparent);
 }
 
 .infos {
@@ -194,28 +209,51 @@ body {
 .langTolls {
   margin-top: 20px;
   justify-content: center;
+  margin-left: 220px;
+  margin-right: 220px;
 }
 
-.langTolls h1 {
+.title{
+  display: flex;
+  align-items: center;
+}
+
+.title h1{
   text-transform: uppercase;
-  font-size: 40px;
-  text-align: center;
+  font-size: 35px;
+  text-align: left;
+}
+
+.line {
+  flex-grow: 1;
+  height: 2px;
+  background-color: #fff;
+  margin-left: 10px;
 }
 
 .skills {
   display: flex;
-  width: 50%;
+  width: 95%;
+  height: 150px;
   margin: 10px auto 0 auto;
-  border: 2px solid #fff;
-  padding: 10px 20px;
-  border-radius: 90px / 90px;
+  border: 1px solid #383129;
   overflow: hidden;
   position: relative;
 }
 
+.lang {
+  display: flex;
+  width: 150px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  border-right: 2px solid #383129;
+}
+
 .skills-track {
   display: flex;
-  gap: 35px;
   animation: scroll 20s linear infinite;
 }
 
@@ -230,21 +268,16 @@ body {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   gap: 30px;
-  padding: 20px;
   flex-wrap: wrap;
-}
-
-.MainSec-projects h1 {
-  text-transform: uppercase;
-  font-size: 40px;
-  text-align: center;
+  margin-left: 220px;
+  margin-right: 220px;
 }
 
 .Mainproject-card {
   display: flex;
+  align-self: center;
   width: 800px;
   height: 400px;
   background-size: cover;

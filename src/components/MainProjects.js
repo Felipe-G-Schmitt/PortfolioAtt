@@ -2,6 +2,7 @@ import EcoHealthhome from "../assets/projects/ecoHealth-home.png";
 import SplatGamehome from "../assets/projects/splatgame-home.png";
 import CategoriaProjeto from "./../components/CategoriaProjeto";
 import { FaReact, FaNpm } from "react-icons/fa";
+import { IoMdArrowDropright } from "react-icons/io";
 import { SiExpo } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { useState } from "react";
@@ -12,7 +13,11 @@ function MainProjects() {
 
     return (
         <section className="MainSec-projects">
-            <h1>Projetos em destaque</h1>
+            <div className="title">
+                <IoMdArrowDropright size={50}/> <h1>Projetos em destaque</h1>
+                <div className="line"></div>
+            </div>
+
 
             <a className="Mainproject-card" href="https://github.com/function404/jogoDengue" target="_blank" rel="noopener noreferrer">
             <img src={EcoHealthhome} alt="Projecto EcoHealth" />
